@@ -60,6 +60,16 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.winner-text {
+  color: rgb(30, 26, 3);
+  animation: flash 1s infinite alternate;
+}
+
+@keyframes flash {
+  from { text-shadow: 0 0 5px gold, 0 0 10px orange; }
+  to   { text-shadow: 0 0 20px red, 0 0 30px darkred; }
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
